@@ -1,20 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
-    background: radial-gradient(circle , #fff, rgb(213, 244, 245)); ;
-}
-.header {
-    display: flex;
-    justify-content:flex-end;
+  background: radial-gradient(circle, #fff, rgb(213, 244, 245));
+  font-family: "Roboto", sans-serif;
 }
 
-a, a:visited {
-    padding:5px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: small;
-    color:black
-    
+.header {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+
+#img-google {
+  width: 350px;
+  padding-top: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-block {
+  height: 30px;
+  padding: 3px 15px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  border: darkgrey solid 1px;
+  display: flex;
+}
+
+.input-block:hover,
+.input-block:active {
+  border: rgb(114, 112, 112) solid 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.input-block > input {
+  background-color: transparent;
+  font-size: 18px;
+}
+.input-block > input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+@media (max-width: 600px) {
+  .header {
+    flex-flow: column;
+  }
+
+  #img-google {
+    padding-top: 20px;
+    width: 200px;
+  }
+
+  .main-block {
+    width: 100%;
+  }
+
+  .action-button-block {
+ flex-flow: column;
+  }
+}
+
+a,
+a:visited {
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: small;
+  color: black;
 }
 a:hover {
-    color:blue;
+  color: blue;
 }
 
+.action-button {
+  height: 35px;
+  width: 100%;
+  margin: 4px;
+  border-radius: 15px;
+  border: darkgrey solid 1px;
+}
+
+.action-button:hover {
+  height: 35px;
+  width: 100%;
+  margin: 4px;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+  border: blue solid 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.action-button-block {
+    display:flex;
+}
