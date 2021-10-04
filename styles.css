@@ -1,0 +1,20 @@
+body {
+    background: radial-gradient(circle , #fff, rgb(213, 244, 245)); ;
+}
+.header {
+    display: flex;
+    justify-content:flex-end;
+}
+
+a, a:visited {
+    padding:5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: small;
+    color:black
+    
+}
+a:hover {
+    color:blue;
+}
+
