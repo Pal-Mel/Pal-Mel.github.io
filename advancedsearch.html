@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Розширений пошук</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">Пошук Google</a>
+    </div>
+    <h1>Розширений пошук на Google</h1>
+
+    <form action="https://google.com/search">
+      <hr />
+
+      <strong>Знайти сторінки, що містять ...</strong>
+
+      <div class="input-label">
+        <div class="input-label-text"><small>усі ці слова:</small></div>
+
+        <div class="input-block">
+          <input
+            style="width: 100%; border: none; height: 100%"
+            type="text"
+            name="q"
+          />
+        </div>
+      </div>
+
+      <div class="input-label">
+        <div class="input-label-text"><small>саме цим словом або фразою:</small></div>
+
+        <div class="input-block">
+          <input
+            style="width: 100%; border: none; height: 100%"
+            type="text"
+            name="q"
+          />
+        </div>
+      </div>
+
+      <div class="input-label">
+        <div class="input-label-text"><small>будь-яким із цих слів:</small></div>
+
+        <div class="input-block">
+          <input
+            style="width: 100%; border: none; height: 100%"
+            type="text"
+            name="q"
+          />
+        </div>
+      </div>
+
+      <div class="input-label">
+        <div class="input-label-text"><small>жодне з цих слів:</small></div>
+
+        <div class="input-block">
+          <input
+            style="width: 100%; border: none; height: 100%"
+            type="text"
+            name="q"
+          />
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="action-button-block">
+        <button class="action-button" type="submit">Розширений пошук</button>
+      </div>
+    </form>
+  </body>
 </html>
