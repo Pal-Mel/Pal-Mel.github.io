@@ -23,6 +23,11 @@
     flex-flow: column;
   }
 
+  .adv-search-button {
+    margin:auto; 
+    max-width:100%;
+  }
+
   h1 {
       font-size: 20px;
   }
@@ -143,6 +148,11 @@ a:hover {
 
 .action-button-block {
   display: flex;
+}
+
+.adv-search-button , .adv-search-button:hover{
+  margin:auto; 
+  max-width:250px;
 }
 
 
